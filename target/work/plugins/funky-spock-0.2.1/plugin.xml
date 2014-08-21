@@ -1,0 +1,25 @@
+<plugin name='funky-spock' version='0.2.1' grailsVersion='2.0 &gt; *'>
+  <author>Shane Riddell</author>
+  <authorEmail>riddell.shane@gmail.com</authorEmail>
+  <title>Funky Spock Plugin</title>
+  <description>Adds spock test type to functional testing phase.</description>
+  <documentation>http://grails.org/plugin/grails-funky-spock</documentation>
+  <type>FunkySpockGrailsPlugin</type>
+  <resources />
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies>
+    <test>
+      <dependency group='org.spockframework' name='spock-grails-support' version='0.7-groovy-2.0' />
+    </test>
+  </dependencies>
+  <plugins>
+    <test>
+      <plugin group='org.grails.plugins' name='spock' version='0.7' />
+    </test>
+  </plugins>
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
